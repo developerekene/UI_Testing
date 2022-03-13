@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_menu_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ekene's Tech School"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:textSize="26sp"
+            android:layout_marginStart="60dp"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginStart="50dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/registration_title_heading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_name_reg_form"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_form_user_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="68dp"
+        app:helperText="@string/Important"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Sur Name First" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_form_user_phone_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="28dp"
+        app:helperText="@string/Important"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="@+id/reg_form_user_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/reg_form_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/reg_form_user_name"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_form_user_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="36dp"
+        app:helperText="@string/Important"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="@+id/reg_form_user_phone_number"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/reg_form_user_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/reg_form_user_phone_number"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/input_name_reg_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reg_form_user_name"
+        app:layout_constraintStart_toStartOf="@+id/reg_form_user_name" />
+
+    <TextView
+        android:id="@+id/input_password_reg_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        app:layout_constraintBottom_toTopOf="@+id/reg_form_user_phone_number"
+        app:layout_constraintStart_toStartOf="@+id/input_name_reg_form"
+        app:layout_constraintTop_toBottomOf="@+id/reg_form_user_name"
+        app:layout_constraintVertical_bias="1.0"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/input_name_reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/reg_form_user_email"
+        app:layout_constraintStart_toStartOf="@+id/input_password_reg_form"
+        app:layout_constraintTop_toBottomOf="@+id/reg_form_user_phone_number"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/input_name_reg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:text="Sex"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_reg_form"
+        app:layout_constraintStart_toStartOf="@+id/input_name_reg_email"
+        app:layout_constraintTop_toBottomOf="@+id/reg_form_user_email"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinner_reg_form"
+        android:entries="@array/gender"
+        android:layout_width="369dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@+id/input_name_reg_sex"
+        app:layout_constraintTop_toBottomOf="@+id/reg_form_user_email" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_reg_form"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/spinner_reg_form"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_reg_form" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

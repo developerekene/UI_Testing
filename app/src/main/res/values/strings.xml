@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyWeek5TaskEkene</string>
+    <string name="Registration_Button">Register</string>
+    <string name="Login_Button">Login</string>
+    <string name="Name">Name</string>
+    <string name="Mail">Mail</string>
+    <string name="gender">Gender</string>
+    <string name="Password">Password</string>
+    <string name="Important">*Important</string>
+    <string name="Phone">Phone</string>
+    <string name="Reg_form">Registration Form</string>
+
+    <string-array name="gender">
+        <item>Pick an Option</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>
