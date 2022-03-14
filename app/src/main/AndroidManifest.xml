@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyWeek5TaskEkene">
         <activity
-            android:name=".Activities.ProfilePageActivity"
+            android:name=".profile.ProfilePageActivity"
             android:exported="false" />
         <activity
             android:name=".ProfilePageActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.ProfilePageActivity"
+            android:name=".profile.ProfilePageActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -11,7 +11,7 @@
     <string name="Reg_form">Registration Form</string>
 
     <string-array name="gender">
-        <item>Pick an Option</item>
+        <item></item>
         <item>Male</item>
         <item>Female</item>
     </string-array>
