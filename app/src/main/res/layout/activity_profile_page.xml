@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="@+id/profile_background_image_iv"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_profile_page"
         app:srcCompat="@drawable/ellipse" />
@@ -69,13 +69,13 @@
         android:id="@+id/profile_page_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="44dp"
         android:text="Full Name"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -83,13 +83,13 @@
         android:id="@+id/profile_page_phone_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="28dp"
         android:text="Phone Number"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/profile_page_name"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/profile_page_name"
         app:layout_constraintTop_toBottomOf="@+id/profile_page_name" />
 
@@ -97,12 +97,12 @@
         android:id="@+id/profile_page_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Email Address"
         android:textSize="17sp"
         android:textStyle="italic"
-        android:text="Email Address"
         app:layout_constraintEnd_toEndOf="@+id/profile_page_phone_number"
-        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/profile_page_phone_number"
         app:layout_constraintTop_toBottomOf="@+id/profile_page_phone_number" />
 
@@ -110,7 +110,7 @@
         android:id="@+id/profile_page_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="44dp"
         android:text="Gender"
         android:textSize="17sp"
         android:textStyle="italic"
@@ -118,56 +118,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/profile_page_email"
         app:layout_constraintTop_toBottomOf="@+id/profile_page_email" />
-
-    <TextView
-        android:id="@+id/profile_page_about"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="About"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
-        app:layout_constraintStart_toEndOf="@+id/profile_page_name"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="202dp"
-        android:layout_height="88dp"
-        android:text="This is an example of  what the the about us section should carry. It includes the persons personal details and what they like to do. "
-        app:layout_constraintEnd_toEndOf="@+id/profile_page_about"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/profile_page_about"
-        app:layout_constraintTop_toBottomOf="@+id/profile_page_about" />
-
-    <Button
-        android:id="@+id/profile_page_follow_btn"
-        android:layout_width="125dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:text="Follow"
-        app:layout_constraintEnd_toEndOf="@+id/profile_page_gender"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/profile_page_gender"
-        app:layout_constraintTop_toBottomOf="@+id/profile_page_gender">
-
-
-    </Button>
-
-    <Button
-        android:id="@+id/profile_page_read_more"
-        android:layout_width="202dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="52dp"
-        android:text="Read More"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -218,12 +168,13 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/profie_page_button_bv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="Logout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/profile_background_image_iv" />
 
